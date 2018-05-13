@@ -25,9 +25,9 @@ lbl.configure(background="white")
 name = ''
 def OpenFile():
 	global name
-	name = askopenfilename(initialdir="/",
+	name = askopenfilename(initialdir="~/",
                            filetypes =(("Text File", "*.txt"), ("All Files", "*.*")),
-                           title = "Choose a text file."
+                           title = "Choose text file only."
                            )
     
     #Using try in case user types in unknown file or closes without choosing a file.
